@@ -1,4 +1,4 @@
-# FoodDelivery_Gruppo12
+# Food Delivery
 
 ## 1) Descrizione del progetto
 
@@ -50,7 +50,7 @@ Per consentire a JPA di connettersi al tuo database MySQL locale, devi configura
 Prima di avviare l'applicazione principale, è necessario popolare il database appena creato con dei dati di test (ristoranti iniziali, utenti, menù e piatti). Nel progetto è presente una classe dedicata a questo scopo.
 
 ### Tramite IntelliJ IDEA:
-1. Nel pannello dei file a sinistra (**Project View**), naviga fino alla classe `MainInizializzaDatabase` (situata nel percorso `Database/MainInizializzaDatabase.java`).
+1. Nel pannello dei file a sinistra (**Project View**), naviga fino alla classe `MainInizializzaDatabase` (situata nel percorso `Setup/MainInizializzaDatabase.java`).
 2. Apri il file.
 3. Clicca sul **triangolino verde (Play)** che compare a sinistra della riga: 
    `public static void main(String[] args)`
