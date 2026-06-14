@@ -25,7 +25,7 @@ Per preparare l'ambiente del database, segui questi passaggi:
 3. Esegui il seguente comando SQL per creare lo schema vuoto:
 
 ```sql
-CREATE DATABASE IF NOT EXISTS food_delivery_db;
+CREATE DATABASE IF NOT EXISTS food_delivery;
 ```
 
 ## 4) Configurazione del persistence.xml
@@ -38,7 +38,7 @@ Per consentire a JPA di connettersi al tuo database MySQL locale, devi configura
 3. Modifica i valori inserendo la porta corretta del tuo MySQL, il tuo username e la tua password personale:
 
 ```xml
-<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/food_delivery_db"/>
+<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/food_delivery"/>
 <property name="jakarta.persistence.jdbc.user" value="IL_TUO_USERNAME"/>
 <property name="jakarta.persistence.jdbc.password" value="LA_TUA_PASSWORD"/>
 ```
