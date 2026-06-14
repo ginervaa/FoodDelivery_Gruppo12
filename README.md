@@ -1,6 +1,6 @@
 # Food Delivery
 
-## 1) Descrizione del progetto
+## Descrizione del progetto
 
 Sistema di Gestione di Ordini per Piattaforma di Food Delivery. Progetto per il corso di Ingegneria del Software (a.a. 2025/26), Prof. Domenico Amalfitano. Gruppo 12.
 
@@ -8,7 +8,9 @@ FoodDelivery è un'applicazione Java desktop per la gestione di servizi di food 
 
 Il progetto **FoodDelivery** consente di simulare l'intero ecosistema di un servizio di consegna a domicilio. L'applicazione permette agli utenti di effettuare il login o registrazione, ai clienti di esplorare i ristoranti aperti, consultare i relativi menù e ordinare i piatti desiderati, ai ristoratori di gestire il proprio ristorante e i propri ordini, e agli amministratori di valutare l'andamento complessivo del sistema. 
 
-## 2) Prerequisiti da installare
+## Guida all'installazione
+
+### 1) Prerequisiti da installare
 
 Prima di avviare il progetto, assicurati che sul tuo sistema siano installati i seguenti componenti:
 
@@ -18,7 +20,7 @@ Prima di avviare il progetto, assicurati che sul tuo sistema siano installati i 
 * **Strumento di Build:** Maven (solitamente già integrato in IntelliJ).
 * **Client Database (Opzionale):** MySQL Workbench.
 
-## 3) Configurazione del database
+## 2) Configurazione del database
 
 Per preparare l'ambiente del database, segui questi passaggi:
 
@@ -30,7 +32,7 @@ Per preparare l'ambiente del database, segui questi passaggi:
 CREATE SCHEMA `food_delivery` ;
 ```
 
-## 4) Configurazione del persistence.xml
+### 3) Configurazione del persistence.xml
 
 Per consentire a JPA di connettersi al tuo database MySQL locale, devi configurare le credenziali di accesso (username e password).
 
@@ -45,7 +47,7 @@ Per consentire a JPA di connettersi al tuo database MySQL locale, devi configura
 <property name="jakarta.persistence.jdbc.password" value="LA_TUA_PASSWORD"/>
 ```
 
-## 5) Configurazione della GUI (Swing UI Designer)
+### 4) Configurazione della GUI (Swing UI Designer)
 
 Poiché l'interfaccia grafica del progetto è realizzata con lo strumento Swing UI Designer di IntelliJ IDEA, è fondamentale configurare l'IDE in modo che generi correttamente il codice sorgente Java associato ai file di interfaccia (`.form`) durante il salvataggio e la compilazione.
 
@@ -55,7 +57,7 @@ Poiché l'interfaccia grafica del progetto è realizzata con lo strumento Swing 
 4. Clicca su **Apply** e poi su **OK** per salvare le modifiche.
 5. Esegui un Rebuild completo del progetto: seleziona la voce **Build** dal menu in alto e clicca su **Rebuild Project**.
 
-## 6) Esecuzione del Main
+### 5) Esecuzione del Main
 
 Prima di avviare l'applicazione principale, è necessario popolare il database appena creato con dei dati di test (ristoranti iniziali, utenti, menù e piatti). Nel progetto è presente una classe dedicata a questo scopo.
 
