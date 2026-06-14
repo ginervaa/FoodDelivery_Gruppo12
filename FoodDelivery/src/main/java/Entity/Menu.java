@@ -130,14 +130,18 @@ public class Menu {
         boolean rimossoDalMenu = piatti.remove(piatto);
 
         // Lo rimuovo dal DB.
-        GestorePersistenza gestorePersistenza = new GestorePersistenza();
+        /*GestorePersistenza gestorePersistenza = new GestorePersistenza();
 
         boolean rimossoDalDB = gestorePersistenza.elimina(
                 Piatto.class,
                 idPiatto
-        );
+        );*/
 
-        return rimossoDalMenu && rimossoDalDB;
+        GestorePersistenza gestorePersistenza = new GestorePersistenza();
+        Menu menuAggiornato = gestorePersistenza.aggiorna(this);
+
+        //return rimossoDalMenu && rimossoDalDB;
+        return rimossoDalMenu  && (menuAggiornato != null);
     }
 
     // Utilizzato da Ristorante per associare al Menu i piatti caricati da JPA.
