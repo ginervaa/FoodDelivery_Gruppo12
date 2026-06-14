@@ -4,7 +4,7 @@
 
 Sistema di Gestione di Ordini per Piattaforma di Food Delivery. Progetto per il corso di Ingegneria del Software (a.a. 2025/26), Prof. Domenico Amalfitano. Gruppo 12.
 
-FoodDelivery è un'applicazione Java desktop per la gestione di servizi di food delivery, dotata di interfaccia grafica (Swing) e persistenza dei dati su database relazionale.
+FoodDelivery è un'applicazione Java desktop per la gestione di servizi di food delivery, dotata di interfaccia grafica (Swing) e persistenza dei dati su database relazionale, che utilizza il pattern architetturale BCED.
 
 Il progetto **FoodDelivery** consente di simulare l'intero ecosistema di un servizio di consegna a domicilio. L'applicazione permette agli utenti di effettuare il login o registrazione, ai clienti di esplorare i ristoranti aperti, consultare i relativi menù e ordinare i piatti desiderati, ai ristoratori di gestire il proprio ristorante e i propri ordini, e agli amministratori di valutare l'andamento complessivo del sistema. 
 
