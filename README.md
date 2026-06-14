@@ -30,5 +30,31 @@ Per preparare l'ambiente del database, segui questi passaggi:
 
 ```sql
 CREATE DATABASE IF NOT EXISTS food_delivery_db;
+```
 
-## 4) 
+---
+
+## 4) Configurazione del persistence.xml
+
+Per consentire a JPA di connettersi al tuo database MySQL locale, devi configurare le credenziali di accesso (username e password).
+
+1. All'interno del progetto, naviga fino al file di configurazione situato nel percorso: src/main/resources/META-INF/persistence.xml
+2. Apri il file e individua i tag <property> relativi alla connessione JDBC.
+3. Modifica i valori inserendo la porta corretta del tuo MySQL, il tuo username e la tua password personale:
+
+<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/food_delivery_db"/>
+<property name="jakarta.persistence.jdbc.user" value="IL_TUO_USERNAME"/>
+<property name="jakarta.persistence.jdbc.password" value="LA_TUA_PASSWORD"/>
+
+4. Salva il file.
+
+## 5) Esecuzione del Main
+
+Prima di avviare l'applicazione principale, è necessario popolare il database appena creato con dei dati di test (ristoranti iniziali, utenti, menù e piatti). Nel progetto è presente una classe dedicata a questo scopo.
+
+Tramite IntelliJ IDEA:
+1. Nel pannello dei file a sinistra, naviga fino alla classe MainInizializzaDatabase (es. sotto il pacchetto principale o Database/MainInizializzaDatabase.java).
+2. Apri il file.
+3. Clicca sul triangolino verde (Play) che compare a sinistra della riga: public static void main(String[] args)
+4. Seleziona Run 'MainInizializzaDatabase.main()'.
+5. Controlla la console in basso: l'esecuzione creerà le tabelle e inserirà i dati iniziali di prova.
