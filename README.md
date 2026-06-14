@@ -20,7 +20,7 @@ Prima di avviare il progetto, assicurati che sul tuo sistema siano installati i 
 * **Strumento di Build:** Maven (solitamente già integrato in IntelliJ).
 * **Client Database (Opzionale):** MySQL Workbench.
 
-## 2) Configurazione del database
+### 2) Configurazione del database
 
 Per preparare l'ambiente del database, segui questi passaggi:
 
@@ -61,7 +61,7 @@ Poiché l'interfaccia grafica del progetto è realizzata con lo strumento Swing 
 
 Prima di avviare l'applicazione principale, è necessario popolare il database appena creato con dei dati di test (ristoranti iniziali, utenti, menù e piatti). Nel progetto è presente una classe dedicata a questo scopo.
 
-### Tramite IntelliJ IDEA:
+#### Tramite IntelliJ IDEA:
 1. Nel pannello dei file a sinistra (**Project View**), naviga fino alla classe `MainInizializzaDatabase` (situata nel percorso `Setup/MainInizializzaDatabase.java`).
 2. Apri il file.
 3. Clicca sul **triangolino verde (Play)** che compare a sinistra della riga: 
