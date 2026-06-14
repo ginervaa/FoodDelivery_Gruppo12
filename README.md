@@ -45,7 +45,17 @@ Per consentire a JPA di connettersi al tuo database MySQL locale, devi configura
 <property name="jakarta.persistence.jdbc.password" value="LA_TUA_PASSWORD"/>
 ```
 
-## 5) Esecuzione del Main
+## 5) Configurazione della GUI (Swing UI Designer)
+
+Poiché l'interfaccia grafica del progetto è realizzata con lo strumento Swing UI Designer di IntelliJ IDEA, è fondamentale configurare l'IDE in modo che generi correttamente il codice sorgente Java associato ai file di interfaccia (`.form`) durante il salvataggio e la compilazione.
+
+1. Apri le impostazioni di IntelliJ IDEA (`File` -> `Settings`).
+2. Nel menu a sinistra, naviga su **Editor** -> **GUI Designer**.
+3. Individua l'opzione **Generate GUI into:** e seleziona **Java source code**.
+4. Clicca su **Apply** e poi su **OK** per salvare le modifiche.
+5. Esegui un Rebuild completo del progetto: seleziona la voce **Build** dal menu in alto e clicca su **Rebuild Project**.
+
+## 6) Esecuzione del Main
 
 Prima di avviare l'applicazione principale, è necessario popolare il database appena creato con dei dati di test (ristoranti iniziali, utenti, menù e piatti). Nel progetto è presente una classe dedicata a questo scopo.
 
