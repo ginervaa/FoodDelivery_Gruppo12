@@ -25,7 +25,7 @@ Per preparare l'ambiente del database, segui questi passaggi:
 3. Esegui il seguente comando SQL per creare lo schema vuoto:
 
 ```sql
-CREATE DATABASE IF NOT EXISTS food_delivery;
+CREATE SCHEMA `food_delivery` ;
 ```
 
 ## 4) Configurazione del persistence.xml
