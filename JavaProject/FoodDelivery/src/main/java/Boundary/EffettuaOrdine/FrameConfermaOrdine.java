@@ -113,6 +113,15 @@ public class FrameConfermaOrdine {
                     // La variabile interna viene aggiornata.
                     ordineInviato = true;
 
+                    /*
+                     * Qui potrebbero venire utilizzate le API del Sistema di notifiche esterno,
+                     * permettendo alla Boundary di interfacciarsi con il Sistema di notifiche,
+                     * per notificare il ristoratore della ricezione di un ordine.
+                     * Per adesso, simulo la chiamata alle API del Sistema di notifiche con una
+                     * stampa su console.
+                     */
+                    System.out.println("--- NOTIFICA INVIATA AL RISTORATORE ---");
+
                     // La finestra di conferma ordine viene chiusa.
                     frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
 
